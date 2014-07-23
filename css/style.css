@@ -1,7 +1,487 @@
-@import url("../../reverie-master/css/style.css");
 /* This is the Sass/Scss file loaded by WordPress in frontend.
  * Tweak it and have fun.
  */
+@import url("../../reverie-master/css/style.css");
 body {
-  background: #fefefe;
+  background: black;
+  font-size: 12px;
+}
+
+.name {
+  margin: 2em 0 2em 0;
+}
+
+.name h1 a {
+  font-family: "Etelka Light Pro", san-serif;
+  font-weight: bold;
+  color: lime;
+  font-size: 1em;
+}
+
+.name h1 a .super {
+  font-family: "wordy-diva";
+  font-weight: regular;
+  color: white;
+  position: relative;
+  left: 0.1em;
+  bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+#small-header .name h1 {
+  font-family: "wordy-diva";
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#small-header .name h1 a .super {
+  font-family: "wordy-diva";
+  font-weight: regular;
+  color: white;
+  position: relative;
+  left: 0.1em;
+  bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+.name h4 {
+  font-family: "wordy-diva";
+  color: lime;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+
+#header {
+  background-color: transparent;
+  border-bottom: 4px solid rgba(0, 255, 0, 0.7);
+  margin: 0;
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#small-header {
+  background-colour: black;
+  position: relative;
+  z-index: 1;
+}
+
+nav.top-bar {
+  background: none;
+  padding-top: 4px;
+  padding-bottom: 50px;
+  border-top: 1px solid white;
+  height: 20px;
+}
+
+.top-bar-section ul {
+  background: none;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: none;
+  line-height: 35px;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: -webkit-linear-gradient(top, rgba(0, 255, 0, 0.9), rgba(0, 255, 0, 0.5));
+  border-radius: 3px;
+}
+
+.top-bar-section ul .divider {
+  border-right: none;
+}
+
+#header #searchform {
+  margin: 0;
+  padding: 0 30px 0 0;
+  width: auto;
+  float: right;
+}
+
+#header #searchform fieldset {
+  margin: 0 0 0;
+  padding: 0 0 0 0;
+  border: none;
+}
+
+#header #searchform fieldset:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#header #searchform input {
+  border: none;
+  width: 140px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3px 4px;
+  margin: 2px 0 0 4px;
+  display: block;
+  float: right;
+  line-height: 1;
+  height: 25px;
+  font-size: .8em;
+  color: #fff;
+}
+
+#header #searchform input:focus {
+  box-shadow: none;
+}
+
+#header #searchform button {
+  text-transform: uppercase;
+  text-indent: -9999px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  background: url(/wp-content/themes/reverie-child/images/search.png) right no-repeat;
+  height: 28px;
+  width: 30px;
+  float: left;
+}
+
+#small-header fieldset {
+  margin: 0 0 0 25%;
+  padding: 0 0 0 0;
+  border: none;
+  text-align: center;
+}
+
+#small-header fieldset:after {
+  display: table;
+  clear: both;
+}
+
+#small-header input {
+  border: none;
+  width: 140px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3px 4px;
+  margin: 2px 0 0 4px;
+  display: inline-block;
+  line-height: 1;
+  height: 25px;
+  font-size: .8em;
+  color: #fff;
+}
+
+#small-header input:focus {
+  box-shadow: none;
+}
+
+#small-header button {
+  text-transform: uppercase;
+  text-indent: -9999px;
+  padding: 0 0 10px 30px;
+  margin: 0 0 0 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  background: url(/wp-content/themes/reverie-child/images/search.png) right no-repeat;
+  height: 28px;
+  width: 30px;
+}
+
+#menuright.right ul {
+  margin: none;
+  padding: none;
+  border: none;
+}
+
+input#searchsubmit.button {
+  margin: none;
+  border: none;
+  padding: none;
+}
+
+#button {
+  padding: .5em 1em;
+  text-decoration: none;
+  width: 20%;
+  display: block;
+  float: left;
+  text-indent: -9999px;
+  background: url(/wp-content/themes/reverie-child/images/mob-menu.png) center center rgba(0, 255, 0, 0.8) no-repeat;
+  height: 60px;
+}
+
+#effect {
+  position: relative;
+  text-align: center;
+}
+
+#effect h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+}
+
+img#header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#content {
+  padding: 0px 10px 40px 10px;
+}
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+.isotope {
+  background: none;
+  max-width: 1400px;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .item ---- */
+.item {
+  float: left;
+  background: none;
+}
+
+article {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 3px;
+  padding: 20px;
+  border: none;
+}
+
+article p {
+  color: white;
+  font-size: 1em;
+  font-family: "proxima-nova", san-serif;
+}
+
+article h2 a {
+  color: white;
+  font-size: 20px;
+  line-height: .3;
+  font-family: "Etelka Light Pro";
+}
+
+article h2 a::after {
+  content: ' ';
+  display: block;
+  position: relative;
+  float: left;
+  top: 55px;
+  bottom: 0px;
+  left: 32px;
+  width: 30px;
+  height: 3px;
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+article header p {
+  color: white;
+  font-size: 20px;
+}
+
+article h2 a:hover {
+  color: lime;
+}
+
+.item.width2 {
+  width: 200px;
+}
+
+.item.height2 {
+  height: 100px;
+}
+
+.item.medium-block-grid-2 {
+  width: 49%;
+}
+
+body {
+  background: #000;
+  background-image: url(/wp-content/themes/reverie-child/images/matbk.jpg);
+}
+
+#cMenu ul {
+  text-align: center;
+}
+
+#cMenu ul li {
+  list-style-type: none;
+  font-family: "Etelka Light Pro";
+  font-size: 1.2em;
+  display: inline;
+  margin: 0 0 0 40px;
+  color: white;
+}
+
+#cMenu ul li a {
+  color: white;
+}
+
+#cMenu ul li a:hover {
+  color: rgba(0, 255, 0, 0.7);
+}
+
+#content {
+  background: transparent;
+  border: none;
+}
+
+footer {
+  display: none;
+}
+
+h1.entry-title {
+  font-size: 1.8em;
+  color: white;
+}
+
+.single #content p {
+  font-family: "proxima-nova";
+  font-size: 1.3em;
+}
+
+#comments h3 {
+  color: white;
+  font-size: 1.8em;
+}
+
+#respond h3 {
+  color: white;
+  font-size: 1.8em;
+}
+
+#cMenu {
+  margin: 1.5em 0 0 0;
+  width: 100%;
+  max-height: 50px;
+}
+
+.page p {
+  font-size: 1.3em;
+}
+
+#responseForm {
+  border-radius: 10px;
+  background-color: none;
+  padding: 10px 15px;
+  margin: 10px 0 0 10px;
+}
+
+#responseForm input {
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 4px;
+  margin: 2px 0 0 4px;
+  display: block;
+  float: right;
+  line-height: 1;
+  height: 25px;
+  font-size: .8em;
+  color: #fff;
+}
+
+#responseForm textarea {
+  border: 1px #333;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 4px;
+  margin: 2px 0 0 4px;
+  display: block;
+  float: right;
+  max-width: 100%;
+  line-height: 1;
+  height: 25px;
+  font-size: .8em;
+  color: #fff;
+}
+
+#responseForm label {
+  color: #999;
+}
+
+.cButton {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.icon {
+  fill: rgba(0, 255, 0, 0.7);
+  stroke: rgba(0, 255, 0, 0.7);
+}
+
+.icon:hover {
+  fill: lime;
+  stroke: none;
+}
+
+a.moretext {
+  color: rgba(0, 255, 0, 0.7);
+  margin: 0 10px 0px 10px;
+}
+
+a:hover.moretext {
+  color: lime;
 }
