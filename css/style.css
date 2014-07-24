@@ -483,5 +483,5 @@ a.moretext {
 }
 
 a:hover.moretext {
-  color: lime;
+  color: rgba(0, 255, 0, 0.9);
 }
