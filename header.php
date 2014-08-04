@@ -9,36 +9,7 @@
 
 <head>
 
-<!--myfonts temp script -->
 
-<script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=131760(font-family=Etelka+Text+Pro)&sid=131763(font-family=Etelka+Light+Pro)&sid=139978(font-family=Etelka+Wide+Light+Pro)&key=7gZaSK6hA0',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
-
-
-<script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=260063(font-family=Peaches+and+Cream+Regular)&key=mCFSPbNOXu',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
-
-<!-- end myfonts temp -->
 
 <script language="javascript" type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 <script type="text/javascript" src="//use.typekit.net/iha6sbi.js"></script>
@@ -84,7 +55,7 @@
 	
 	<div class="row">
 		<div class="large-12 columns text-center name">
-				<h1><a href="http://runningbeta.dev"> running<span class="super">beta</span><!--<?php bloginfo( 'name' ); ?> --></a></h1>
+				<h1><a href="http://runningbeta.dev"> running<span class="super">beta</span><!--<?php bloginfo( 'name' ); ?> --><img src="<?php bloginfo('stylesheet_directory'); ?>/images/sneakerrev.svg" width=80px></a></h1>
 				<!-- <a href="https://twitter.com/betarunning" class="hide-for-small" rel="external" id="twitter-feed-icon">Follow us on Twitter</a> -->
 				<!-- <h4><?php echo get_bloginfo ( 'description' );  ?></h4> -->
 		</div>
